@@ -1,0 +1,38 @@
+.page {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.page__content {
+    padding: 20px;
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-list__item {
+    padding-left: 30px;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 16px;
+}
+
+.custom-list__item::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f058"; 
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #4CAF50;
+}
+
+.custom-list__item:hover::before {
+    color: #2E7D32;
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
